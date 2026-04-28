@@ -1,16 +1,39 @@
-# Oakridge Nuclear Power Station — Reactor Control Room
+# Reactor Control Room Simulators
 
-A serious, technical Roblox nuclear reactor control-room simulator. Players step
-into the role of a reactor operator at the (original, fictional) **Oakridge
-Nuclear Power Station** and run a large pressurized-water-style reactor from a
-cold start, through grid sync, to stable megawatt-class production — while
-juggling coolant balance, feedwater chemistry, steam pressure, turbine vibration
-and a procedurally generated stream of plant faults.
+This repository contains **two** independent implementations of the same
+fictional nuclear reactor control-room concept:
 
-This repository is the **first working version**. It is fully playable: every
-system in the spec is simulated server-side, every panel is built dynamically
-on the client, and the entire annunciator system, startup checklist, fault
-injector, scoring, save/progression and emergency response logic are wired up.
+| Project | Folder | Stack |
+|---|---|---|
+| **Argonne-1 Web Sim** (recommended) | [`web/`](./web) | Vite · React · TypeScript · Tailwind · Zustand · Recharts |
+| Oakridge Roblox Sim (legacy) | [`src/`](./src) (Rojo) | Roblox / Luau |
+
+Both put the player in the role of a reactor operator running a large
+pressurized-water-style reactor from cold start through grid sync to stable
+megawatt-class production — juggling coolant balance, feedwater chemistry,
+steam pressure, turbine vibration and a procedurally generated stream of plant
+faults.
+
+## Quick start (web simulator)
+
+```bash
+cd web
+npm install
+npm run dev   # http://localhost:5173
+```
+
+See [`web/README.md`](./web/README.md) for full documentation, project layout,
+gameplay walkthrough, save format and customisation guide.
+
+---
+
+## Legacy: Oakridge (Roblox)
+
+The original Roblox implementation is preserved below. It is fully playable in
+Roblox Studio: every system in the spec is simulated server-side, every panel is
+built dynamically on the client, and the entire annunciator system, startup
+checklist, fault injector, scoring, save/progression and emergency response
+logic are wired up.
 
 The code is organized so you can drop more screens, panels, faults, or
 multiplayer roles in without touching the simulation core.
