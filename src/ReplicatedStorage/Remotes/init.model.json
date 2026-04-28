@@ -1,0 +1,11 @@
+{
+  "className": "Folder",
+  "name": "Remotes",
+  "children": [
+    { "className": "RemoteEvent", "name": "PanelAction" },
+    { "className": "RemoteEvent", "name": "SystemUpdate" },
+    { "className": "RemoteEvent", "name": "AlarmUpdate" },
+    { "className": "RemoteEvent", "name": "ProcedureUpdate" },
+    { "className": "RemoteFunction", "name": "RequestSnapshot" }
+  ]
+}
